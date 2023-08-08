@@ -1,21 +1,19 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(
-    MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          centerTitle: true,
-          title: Text('I am Rich'),
-          backgroundColor: Colors.blueGrey,
-        ),
-        backgroundColor: Colors.grey[600],
-        body: Center(
-          child: Image(
-            image: AssetImage('images/diamond.png'),
-          ),
-        ),
+  runApp(MaterialApp(
+    home: Scaffold(
+      backgroundColor: Colors.blueGrey[600],
+      appBar: AppBar(
+        centerTitle: true,
+        backgroundColor: Colors.blueGrey[900],
+        title: Text("I am Rich"),
+      ),
+      body: Center(
+        child: Image(
+          image: AssetImage('images/diamond.png'),
+        ),  
       ),
     ),
-  );
+  ));
 }
